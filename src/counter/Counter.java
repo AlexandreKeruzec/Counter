@@ -1,8 +1,8 @@
 package counter;
 
 public class Counter {
-	int value;
-	int increment;
+	private int value;
+	private int increment;
 	
 	public Counter() {
 		super();
@@ -10,11 +10,15 @@ public class Counter {
 		this.increment = 1;
 	}
 	
-	public Counter(int value, int increment) {
-		super();
-		this.value = value;
-		this.increment = increment;
+	public int getValue() {
+		return value;
 	}
 	
+	public void inc() {
+		value += increment;
+	}
 	
+	public String toString() {
+		return "valeur : " + value + " (increment " + increment + ")";  
+	}
 }
