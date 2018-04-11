@@ -21,4 +21,8 @@ public class Counter {
 	public String toString() {
 		return "valeur : " + value + " (increment " + increment + ")";  
 	}
+	
+	public boolean equals(Counter counterToCompare) {
+		return getValue() == counterToCompare.getValue();
+	}
 }
